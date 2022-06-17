@@ -1,0 +1,98 @@
+{
+  "name" : "Han-Telescope-Android",
+  "active" : true,
+  "updateTime" : "2021-10-04T19:19:39.783Z",
+  "timeZone" : "US/Eastern",
+  "userFunctions" : [ ],
+  "triggerActions" : [ {
+    "active" : true,
+    "delayMSec" : 0,
+    "trigger" : {
+      "componentId" : 0,
+      "type" : "INITIALIZE"
+    },
+    "actions" : [ {
+      "componentId" : 1,
+      "type" : "SHOW"
+    } ]
+  }, {
+    "active" : true,
+    "delayMSec" : 0,
+    "trigger" : {
+      "componentId" : 1,
+      "type" : "VIDEO_ENDED"
+    },
+    "actions" : [ {
+      "componentId" : 0,
+      "type" : "TERMINATE_CREATIVE"
+    } ]
+  } ],
+  "eventDefinitions" : [ {
+    "name" : "impression",
+    "trackingPixels" : [ ]
+  }, {
+    "name" : "click_through",
+    "trackingPixels" : [ ]
+  } ],
+  "variables" : [ {
+    "id" : "closeButton",
+    "value" : "1"
+  } ],
+  "animations" : [ ],
+  "targetingCriteria" : {
+    "distribution" : "ASAP",
+    "bookedImpressions" : 10000,
+    "priority" : 5,
+    "advertiser" : "advertiser",
+    "categories" : [ {
+      "publisher" : "UNIV",
+      "key" : "UV/NATIVE_TEST"
+    }, {
+      "publisher" : "HANM",
+      "key" : "MOBILE/TEST"
+    } ],
+    "format" : "TELESCOPE"
+  },
+  "components" : [ {
+    "id" : 1,
+    "active" : true,
+    "name" : "TELESCOPE",
+    "theme" : "TELESCOPE",
+    "assets" : [ {
+      "id" : 0,
+      "mediaType" : "VIDEO",
+      "sources" : [ {
+        "mimeType" : "video/mp4",
+        "url" : "7ecc088ab0cca7c87106db088cea690f/liberty_mutual.mp4"
+      } ],
+      "width" : {
+        "type" : "NATIVE"
+      },
+      "height" : {
+        "type" : "NATIVE"
+      },
+      "preloadAsset" : false,
+      "removeLetterbox" : false,
+      "playMode" : "IMMEDIATELY",
+      "playDelayMSec" : 0,
+      "soundMode" : "START_MUTED",
+      "zoom" : 1.0,
+      "mobileVideoQuality" : 0.5,
+      "controls" : "FULL"
+    } ],
+    "countMode" : "ALL",
+    "headerHeight" : 0,
+    "preventScrollingDuration" : 0,
+    "message" : "Scroll Down To Continue",
+    "messageColor" : "#ffffff",
+    "messageOpacity" : 1.0,
+    "messageRelativePositionX" : "CENTER",
+    "messageRelativePositionY" : "INSIDE_BOTTOM",
+    "volumeOpacity" : 1.0,
+    "volumeRelativePositionX" : "INSIDE_LEFT",
+    "volumeRelativePositionY" : "INSIDE_BOTTOM"
+  } ],
+  "datasources" : [ ],
+  "verifiers" : [ ],
+  "id" : "rjwY"
+}
